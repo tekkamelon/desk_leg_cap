@@ -1,5 +1,7 @@
+$fn=75;
+
 // 脚の直径
-diameter=19.1;
+diameter=19.2;
 
 // 本体の高さ
 height=25;
@@ -7,7 +9,7 @@ height=25;
 difference(){
 
 	// 本体
-	cylinder(h=height, d1=d+10, d2=d+6.5);
+	cylinder(h=height, d1=diameter+10, d2=diameter+6.5);
 
 	// 空洞
 	translate([0, 0, 1]){

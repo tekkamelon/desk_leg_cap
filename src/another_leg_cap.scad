@@ -12,7 +12,7 @@ height=34+cavity_height;
 difference(){
 
 	// 本体
-	cylinder(h=height, d1=diameter+30, d2=diameter+7);
+	cylinder(h=height, d=diameter+10);
 
 	// 空洞
 	translate([0, 0, height-cavity_height]){

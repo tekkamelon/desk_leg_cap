@@ -3,16 +3,16 @@ $fn=75;
 // 脚の直径
 diameter=20.7;
 
-// 本体の高さ
-height=34;
-
 // 空洞の高さ
 cavity_height=14;
+
+// 本体の高さ
+height=34+cavity_height;
 
 difference(){
 
 	// 本体
-	cylinder(h=height, d1=diameter+15, d2=diameter+6.5);
+	cylinder(h=height, d1=diameter+30, d2=diameter+7);
 
 	// 空洞
 	translate([0, 0, height-cavity_height]){
